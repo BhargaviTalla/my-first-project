@@ -8,10 +8,20 @@
 </head>
 <body>
 
-    <h1>Welcome to My First JavaScript Project</h1>
-    <p>Click the button below to display a welcome message.</p>
+    <div class="container">
+        <h1 id="heading">Welcome to My First JavaScript Project</h1>
 
-    <button onclick="greet()">Click Me</button>
+        <p>
+            This project demonstrates basic HTML, CSS, and JavaScript.
+        </p>
+
+        <button onclick="greet()">Greeting</button>
+        <button onclick="changeHeading()">Change Heading</button>
+        <button onclick="showDateTime()">Show Date & Time</button>
+        <button onclick="changeBackground()">Change Background</button>
+
+        <p id="dateTime"></p>
+    </div>
 
     <script src="script.js"></script>
 
