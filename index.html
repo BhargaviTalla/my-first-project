@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My First JavaScript Project</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <h1>Welcome to My First Project</h1>
-    <p>This is my first HTML page.</p>
+
+<div class="container">
+
+<h1 id="heading">My First JavaScript Project</h1>
+
+<p>
+Welcome! This project demonstrates HTML, CSS and JavaScript.
+</p>
+
+<div class="clock">
+<h2 id="clock"></h2>
+</div>
+
+<div class="date">
+<p id="date"></p>
+</div>
+
+<h2>Counter</h2>
+
+<h1 id="count">0</h1>
+
+<div class="buttons">
+
+<button onclick="increase()">Increase</button>
+
+<button onclick="decrease()">Decrease</button>
+
+<button onclick="resetCounter()">Reset</button>
+
+<button onclick="changeColor()">Background</button>
+
+<button onclick="showMessage()">Greeting</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
