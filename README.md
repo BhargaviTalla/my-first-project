@@ -16,4 +16,4 @@ This repository contains my JavaScript practice and projects while I learn web d
 - Practice coding every day
 
 ## Author
-Your Name
+Bhargavi Talla
