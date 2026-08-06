@@ -1,44 +1,94 @@
-// ===============================
-// My First JavaScript Project
-// Author: Bhargavi Talla
-// ===============================
+// Counter
 
-// Runs when the page loads
-window.onload = function () {
-    console.log("Project Loaded Successfully!");
-};
+let count = 0;
 
-// Display a welcome message
-function greet() {
-    alert("Hello! Welcome to My First JavaScript Project.");
+const counter = document.getElementById("count");
+
+// Increase
+
+function increase(){
+
+count++;
+
+counter.innerHTML = count;
+
 }
 
-// Change the heading text
-function changeHeading() {
-    document.getElementById("heading").innerHTML =
-        "Congratulations! You clicked the button.";
+// Decrease
+
+function decrease(){
+
+count--;
+
+counter.innerHTML = count;
+
 }
 
-// Display the current date and time
-function showDateTime() {
-    const currentDate = new Date();
+// Reset
 
-    document.getElementById("dateTime").innerHTML =
-        "Current Date & Time: " + currentDate.toLocaleString();
+function resetCounter(){
+
+count = 0;
+
+counter.innerHTML = count;
+
 }
 
-// Change the page background color
-function changeBackground() {
-    const colors = [
-        "#f4f4f4",
-        "#d4f1f9",
-        "#ffe4b5",
-        "#e6ffe6",
-        "#f9d6ff"
-    ];
+// Greeting
 
-    const randomColor =
-        colors[Math.floor(Math.random() * colors.length)];
+function showMessage(){
 
-    document.body.style.backgroundColor = randomColor;
+alert("Welcome to My First JavaScript Project!");
+
 }
+
+// Background Color
+
+function changeColor(){
+
+const colors = [
+
+"#f2f2f2",
+
+"#ffe4b5",
+
+"#d4f1f9",
+
+"#d8ffd8",
+
+"#ffd6d6",
+
+"#f9d6ff",
+
+"#fffacd"
+
+];
+
+let random = Math.floor(Math.random()*colors.length);
+
+document.body.style.background = colors[random];
+
+}
+
+// Digital Clock
+
+function showClock(){
+
+let now = new Date();
+
+document.getElementById("clock").innerHTML = now.toLocaleTimeString();
+
+}
+
+setInterval(showClock,1000);
+
+// Date
+
+let today = new Date();
+
+document.getElementById("date").innerHTML =
+today.toDateString();
+
+// Console Message
+
+console.log("Project Loaded Successfully");
