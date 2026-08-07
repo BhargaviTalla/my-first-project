@@ -1,38 +1,41 @@
-# My First JavaScript Project
+# 🚀 My First JavaScript Project
 
-## 📖 About
-This project is created as part of my web development learning journey. It demonstrates the use of HTML, CSS, and JavaScript to build an interactive webpage.
+A simple Counter App built using HTML, CSS, and JavaScript.
 
-## 🚀 Features
-- Welcome message
-- Digital Clock
-- Current Date
-- Change Background Color
-- Counter Application
+## 📌 Features
+
+- Increase Counter
+- Decrease Counter
 - Reset Counter
 - Responsive Design
+- Color changes based on counter value
 
-## 🛠 Technologies Used
+## 🛠️ Technologies Used
+
 - HTML5
 - CSS3
-- JavaScript
-- Git
-- GitHub
+- JavaScript (ES6)
 
 ## 📂 Project Structure
 
-my-first-project/
-│── README.md
+```
+My-First-JavaScript-Project/
 │── index.html
 │── style.css
 │── script.js
+│── README.md
+```
 
-## 🎯 Learning Objectives
-- Learn HTML page structure
-- Apply CSS styling
-- Practice JavaScript functions
-- Understand DOM Manipulation
-- Learn Git and GitHub
+## ▶️ How to Run
+
+1. Download or clone the repository.
+2. Open `index.html` in your browser.
+3. Click the buttons to interact with the counter.
 
 ## 👩‍💻 Author
+
 Bhargavi Talla
+
+---
+
+⭐ If you like this project, give it a star on GitHub.
