@@ -36,6 +36,6 @@ My-First-JavaScript-Project/
 
 Bhargavi Talla
 
----
 
-⭐ If you like this project, give it a star on GitHub.
+
+
