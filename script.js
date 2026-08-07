@@ -1,94 +1,35 @@
-// Counter
-
 let count = 0;
 
-const counter = document.getElementById("count");
+const countDisplay = document.getElementById("count");
+const increaseBtn = document.getElementById("increase");
+const decreaseBtn = document.getElementById("decrease");
+const resetBtn = document.getElementById("reset");
 
-// Increase
+function updateCounter() {
+    countDisplay.textContent = count;
 
-function increase(){
-
-count++;
-
-counter.innerHTML = count;
-
+    if (count > 0) {
+        countDisplay.style.color = "green";
+    } else if (count < 0) {
+        countDisplay.style.color = "red";
+    } else {
+        countDisplay.style.color = "#007bff";
+    }
 }
 
-// Decrease
+increaseBtn.addEventListener("click", () => {
+    count++;
+    updateCounter();
+});
 
-function decrease(){
+decreaseBtn.addEventListener("click", () => {
+    count--;
+    updateCounter();
+});
 
-count--;
+resetBtn.addEventListener("click", () => {
+    count = 0;
+    updateCounter();
+});
 
-counter.innerHTML = count;
-
-}
-
-// Reset
-
-function resetCounter(){
-
-count = 0;
-
-counter.innerHTML = count;
-
-}
-
-// Greeting
-
-function showMessage(){
-
-alert("Welcome to My First JavaScript Project!");
-
-}
-
-// Background Color
-
-function changeColor(){
-
-const colors = [
-
-"#f2f2f2",
-
-"#ffe4b5",
-
-"#d4f1f9",
-
-"#d8ffd8",
-
-"#ffd6d6",
-
-"#f9d6ff",
-
-"#fffacd"
-
-];
-
-let random = Math.floor(Math.random()*colors.length);
-
-document.body.style.background = colors[random];
-
-}
-
-// Digital Clock
-
-function showClock(){
-
-let now = new Date();
-
-document.getElementById("clock").innerHTML = now.toLocaleTimeString();
-
-}
-
-setInterval(showClock,1000);
-
-// Date
-
-let today = new Date();
-
-document.getElementById("date").innerHTML =
-today.toDateString();
-
-// Console Message
-
-console.log("Project Loaded Successfully");
+updateCounter();
